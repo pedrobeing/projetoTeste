@@ -1,0 +1,43 @@
+body.login {
+    background: #fff;
+}
+.login h1 a {
+    background: url('logo.png') no-repeat center center;
+    width: 320px;
+    height: 150px;
+}
+.login input[type="text"]{
+    background-color: #ffffff;
+    border-color:#dddddd;
+    -webkit-border-radius: 4px;
+    font-size: 14px;
+    padding: 10px;
+}
+  
+.login input[type="password"]{
+    background-color: #ffffff;
+    border-color:#dddddd;
+    -webkit-border-radius: 4px;
+    font-size: 14px;
+    padding: 10px;
+}
+.login .button-primary {
+    background-color:#013C78 !important;
+    color: #ffffff;
+    outline: none;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #1f1f1f, 1px 0 1px #1f1f1f, 0 1px 1px #1f1f1f, -1px 0 1px #1f1f1f;
+    border: 1px solid #013C78;
+    transition: all .3s ease;
+  }
+
+  .login .button-primary:hover {
+      margin-top: -5px;
+      margin-bottom: 5px;
+      border-color: transparent;
+      box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  }
+  .login #nav a, .login #backtoblog a {
+      color: #013C78 !important;
+  }

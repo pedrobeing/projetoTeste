@@ -1,0 +1,239 @@
+
+// Global
+body {
+	background-color: #121212;
+	background: #121212;
+	// color: #636363;
+	font-family: 'Ubuntu', sans-serif;;
+	font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+a:hover {
+	text-decoration: none;
+}
+
+img {
+	display: block;
+}
+
+img.responsive {max-width: 100%;}
+
+*, ::after, ::before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+// .owl-carousel .owl-item img{
+// 	width: auto;
+//     max-width: 100%;
+// }
+
+//Placeholder
+@mixin input-placeholder {
+	&.placeholder { @content; }
+	&:-moz-placeholder { @content; }
+	&::-moz-placeholder { @content; }
+	&:-ms-input-placeholder { @content; }
+	&::-webkit-input-placeholder { @content; }
+}
+
+// Medias
+$largura-celular-smaller: 374px;
+$largura-celular-small: 424px;
+$largura-celular: 575px;
+$largura-celular-paisagem: 767px;
+$largura-tablet: 991px;
+$largura-desktop: 1199px;
+$largura-notebook: 1460px;
+
+// Container
+.wrapper{ 
+	width:100%;
+	margin:0px auto;
+	z-index:9;
+	position: relative;
+	padding: 0px 15px;
+}
+.wrapper-1314{ 
+	max-width: 1314px; 
+}
+
+.max-400{
+	max-width: 400px;
+}
+
+
+// Cores
+$branco: #fff;
+$preto: #000;
+$azul: #272B5D;
+$azul-1: #003DA5;
+$azul-2: #223DA5;
+$azul-3: #3BAAFF;
+$azul-4: #6DB8F2;
+$verde: #00CA85;
+$cinza: #636363;
+$cinza-1: #D1D1D1;
+$vermelho: #DE2110;
+
+.azul{color: $azul;}
+.cinza{color: $cinza;}
+.branco{color: $branco;}
+
+$branco: #fff;
+$preto: #000;
+$preto-2: #171717;
+$preto-3: #212121;
+
+$roxo: #630af3;
+$roxo-2: #7b30f5e8;
+$laranja: #e75231;
+$laranja-2: #f17a5f;
+$rosa: #e21f80;
+
+
+.roxo{color: $roxo;}
+.roxo-2{color: $roxo-2;}
+.laranja{color: $laranja;}
+.laranja-2{color: $laranja-2;}
+.rosa{color: $rosa;}
+
+
+// Fontes
+.fs-12 {font-size: 12px;}
+.fs-16 {font-size: 16px;}
+.fs-22 {font-size: 22px;}
+.fs-32 {font-size: 32px;}
+
+
+
+// Tamanhos botões
+
+.btn-381{
+	width: 100%;
+	max-width: 381px;
+	height: 56px;
+}
+
+.btn-554{
+	width: 100%;
+	max-width: 554px;
+	height: 56px;
+}
+
+
+//padrôes dos textos
+.infos-section{
+	font-size: 18px;
+	font-family: 'Ubuntu', sans-serif;;
+	font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+	strong{
+		font-family: 'Gotham-Bold';
+		font-weight: bold;
+	}
+	h1{
+		font-size: 36px;
+		// color: $preto;
+		font-family: 'Ubuntu', sans-serif;;
+		font-weight: normal;
+		font-style: normal;
+	
+		strong{
+			font-family: 'Gotham-Bold';
+			font-weight: bold;
+		}
+	}
+	h2{
+		font-size: 31px;
+		color: $preto;
+		font-family: 'Gotham-Bold';
+		font-weight: bold;
+		font-style: normal;
+		
+	}
+	h3{
+		font-size: 25px;
+		font-family: 'Gotham-Bold';
+		font-weight: bold;
+		font-style: normal;
+
+	}
+	strong{
+		font-weight: bold;
+	}
+}
+
+// Padding pages
+
+.s_page_geral {
+    padding: 100px 0px 200px;
+	overflow: hidden;
+}
+
+.page-404{
+	padding: 200px 0px;
+	h2{
+		color: $azul;
+	}
+}
+
+
+// MEDIA
+
+// Padding pages
+@media(max-width: 1440px){
+	
+}
+@media(max-width: 1199px){
+	// Padding pages
+	.s_page_geral {
+		padding: 80px 0px 150px;
+	}
+	.page-404{
+		padding: 150px 0px;
+	}
+	//padrôes dos textos
+	.infos-section{
+		font-size: 18px;
+		h1{
+			font-size: 26px;
+		}
+		h2{
+			font-size: 26px;
+		}
+	}
+	.btn-355{
+		max-width: 330px;
+	}
+}
+@media(max-width: 991px){
+	// Padding pages
+	.s_page_geral {
+		padding: 50px 0px 100px;
+	}
+	.page-404{
+		padding: 150px 0px 100px;
+	}
+
+	//padrôes dos textos
+	.infos-section{
+		font-size: 14px;
+		h1{
+			font-size: 23px;
+		}
+		h2{
+			font-size: 23px;
+		}
+	}
+	.btn-355{
+		max-width: 300px;
+		font-size: 14px;
+	}
+	.btn-335{
+		max-width: 190px;
+		font-size: 14px;
+	}
+}

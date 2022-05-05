@@ -1,0 +1,78 @@
+// Buttons
+.btn{
+    font-family: 'Gotham-Medium';
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    color: $branco;
+    width: 100%;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease;
+    // text-transform: uppercase;
+    &:focus, &:active, &:hover{
+        box-shadow: none;
+        outline: none;
+        transform: scale(1.05);
+    }
+}
+
+.btn-danger, .btn-danger:focus, .btn-danger:active, .btn-danger:hover{
+    // background: $verde;
+    background: #7a00d4;
+    background: linear-gradient(90deg, #7a00d4 0%, #ff4200 100%);
+    //border: 1px solid transparent;
+    transition: all .3s ease;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-azul-2 {
+     // background: $verde;
+    background-color: $azul-2;
+    //border: 1px solid transparent;
+    transition: all .3s ease;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-azul-3, .btn-success:focus, .btn-success:active, .btn-success:hover{
+    background: $roxo;
+    transition: all .3s ease;
+    box-shadow: none;
+    outline: none;
+    font-family: Ubuntu;
+}
+
+.btn-success, .btn-success:focus, .btn-success:active, .btn-success:hover{
+    background: $verde;
+    border: 1px solid $verde;
+    transition: all .3s ease;
+    box-shadow: none;
+    outline: none;
+}
+
+// Formulário
+.form-control, .form-control:hover, .form-control:focus, .form-control:active{
+    border-radius: 4px;
+    height: 40px;
+    width: 100%;
+    border: 1px solid $cinza-1;
+    border-radius: 4px;
+    font-family: 'Gotham-Book';
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    color: $cinza;
+    font-size: 16px;
+    padding: 0px 30px;
+    box-shadow: none;
+    outline: none;
+    background: transparent;
+    margin-bottom: 12px;
+    @include input-placeholder{
+        color: $cinza;
+    }
+}

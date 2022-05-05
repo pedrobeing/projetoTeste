@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Numo - 2019</title>
+
+    <link rel="stylesheet" href="/assets/css/deps.min.css">
+    <link rel="stylesheet" href="/assets/css/app.min.css">
+</head>
+
+<body>
+    <!-- Modal -->
+<div class="modal modal_contato fade" id="contato" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h1 class="mt-3">
+              <span>FALE CONOSCO</span>
+              contato
+          </h1>
+          <div class="opensans_regular fs-16 cinza">
+            Aliquam bibendum porttitor dolor, et aliquam dui feugiat sit amet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+          </div>
+
+
+          <form class="mt-4 pt-md-3">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Seu nome">  
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Seu e-mail">  
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" rows="3">Mensagem</textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-warning">ENVIAR</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+    <header class="header">
+        <div class="wrapper wrapper-1240">
+            <nav class="navbar navbar-expand-md py-md-5 py-3">
+                <a class="navbar-brand d-md-none d-block" href="#">
+                    <figure class="mb-0">
+                        <img src="/assets/images/logo.png" alt="">
+                    </figure>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navmobile">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navmobile">
+                    <ul class="navbar-nav menu mr-md-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#sobre">A Numo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#expertises">Expertises</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#artigos">Artigos</a>
+                        </li>
+                    </ul>
+                    <figure class="mb-0 mx-auto logo-nav-between d-md-block d-none">
+                        <img src="/assets/images/logo.png" alt="">
+                    </figure>
+                    <div class="nav-contato ml-md-auto">
+                        <ul>
+                            <li class="area-cliente"><img class="mr-2" src="/assets/images/lock.svg" alt="">
+                                <div class="click-area-cliente"> Área do Cliente </div>
+
+                                <div class="box-area-cliente none">
+                                    <h2>Acesse sua conta</h2>
+                                    <form>
+                                        <div class="container-form-cliente">
+                                            <div class="form-group label-float">
+                                                <input type="email" class="form-control" placeholder=" ">
+                                                <label>Digite seu e-mail</label>
+                                            </div>
+                                            <div class="form-group label-float">
+                                                <input type="password" class="form-control" placeholder=" ">
+                                                <label>Digite sua senha</label>
+                                            </div>
+                                            <div class="form-group text-left">
+                                                <a href="#" class="esquece-senha">Esqueci minha senha</a> <br>
+                                                <small class="opensans_regular fs-12 cinza_2 mt-3 d-block">Para uma
+                                                    melhor experiência, indicamos o acesso à Área do Cliente utilizando
+                                                    um computador Desktop ou Notebook.</small>
+                                            </div>
+                                        </div>
+
+
+                                        <button type="submit" class="btn-cliente">ACESSAR</button>
+                                    </form>
+                                </div>
+
+
+                            </li>
+                            <li><a href="#" data-toggle="modal" data-target="#contato"><img src="/assets/images/message.svg" alt=""></a></li>
+                        </ul>
+
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+ 
+    <main >
+        <section class="magnetic s_banner_intro">
+            <div class="bg-video">
+                <video id="videoID" autoplay loop autobuffer muted playsinline src="/assets/images/video.mp4"
+                    type="video/mp4"></video>
+
+                <div class="box-intro-banner pt-lg-5 pt-md-4" data-aos="flip-up">
+                    <div class="infos-banner active">
+                        <h1>
+                            <i>
+                                Seu Patrimônio,
+                            </i>
+                            <br>
+                            Nossa Expertise
+                        </h1>
+                        <figure class="my-5 d-md-block d-none" id="video-container">
+                            <img class="m-auto" src="/assets/images/play.png" alt="">
+                        </figure>
+                        <div class="controls d-md-block d-none">
+                            <p class="opensans_semibold fs-14 branco text-uppercase">CLIQUE PARA ASSISTIR</p>
+                            <div class="progressBar">
+                                <div class="timeBar"></div>
+                                <div class="circleTime"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="videoPlay" class="videoPlay">
+                        <div class="close-video"><i class="fas fa-times"></i></div>
+                        <video controls src="/assets/images/video.mp4" type="video/mp4"></video>
+                    </div>
+                </div>
+
+
+            </div>
+            </div>
+        </section>
+        <section class="magnetic s_sobre pb-5" id="sobre">
+            <div class="wrapper wrapper-1240">
+                <div class="row align-items-center">
+                    <div class="col-md-6 pr-md-0 order-md-0 order-1" data-aos="fade-down-right">
+                        <div class="descricao-sobre">
+                            <span>numo</span>
+                            <h1>8 Anos de Experiência
+                                em Gestão Financeira</h1>
+                            Somos uma gestão de patrimônio que já nasceu com 8 anos de experiência em gestão de
+                            investimentos.
+                        </div>
+                    </div>
+                    <div class="col-md-6 pl-md-0 order-md-1 order-0" data-aos="fade-down-left">
+                        <figure class="mb-0">
+                            <img src="/assets/images/g-financeira.jpg" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="magnetic s_proposta_valor pt-md-0 pt-5 text-center">
+            <div class="wrapper wrapper-1240">
+                <h1>PROPOSTA DE </h1>
+                <figure>
+                    <img class="m-auto title-valor-proposta" src="/assets/images/title_valor.png" alt="">
+                </figure>
+                <div class="row text-left mt-md-5 pt-4">
+                    <div class="col-md-4 mb-4" data-aos="fade-up-right"  data-aos-duration="1500">
+                        <figure class="item_valor_proposta">
+                            <polygon fill="#458923" stroke="#1020AF"></polygon>
+                            <img id="airplane" src="/assets/images/expertise.svg" alt="">
+                            <figcaption>
+                                <h2>Expertise Financeira</h2>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at tortor ultricies,
+                                placerat est id, vestibulum.
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4 mb-4" data-aos="fade-up-right"  data-aos-duration="3000">
+                        <figure class="item_valor_proposta">
+                            <img src="/assets/images/lupa.svg" alt="">
+                            <figcaption>
+                                <h2>TRANSPARÊNCIA</h2>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at tortor ultricies,
+                                placerat est id, vestibulum.
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4 mb-4" data-aos="fade-up-right"  data-aos-duration="5000">
+                        <figure class="item_valor_proposta">
+                            <img src="/assets/images/expertise.svg" alt="">
+                            <figcaption>
+                                <h2>Expertise Financeira</h2>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at tortor ultricies,
+                                placerat est id, vestibulum.
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-md-4 mb-4" data-aos="fade-up-left"  data-aos-duration="1500">
+                        <figure class="item_valor_proposta">
+                            <img src="/assets/images/independencia.svg" alt="">
+                            <figcaption>
+                                <h2>INDEPENDÊNCIA</h2>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at tortor ultricies,
+                                placerat est id, vestibulum.
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4 mb-4" data-aos="fade-up-left"  data-aos-duration="3000">
+                        <figure class="item_valor_proposta">
+                            <img src="/assets/images/exclusividade.svg" alt="">
+                            <figcaption>
+                                <h2>EXCLUSIVIDADE</h2>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at tortor ultricies,
+                                placerat est id, vestibulum.
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4 mb-4" data-aos="fade-up-left"  data-aos-duration="5000">
+                        <figure class="item_valor_proposta">
+                            <img src="/assets/images/independencia.svg" alt="">
+                            <figcaption>
+                                <h2>INDEPENDÊNCIA</h2>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at tortor ultricies,
+                                placerat est id, vestibulum.
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="magnetic s_expertises py-md-4 my-md-0 my-5" id="expertises">
+            <div class="wrapper wrapper-1240 text-center">
+                <h1 class="title_section branco">Expertises</h1>
+                <div class="desc_section branco mt-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis, neque at scelerisque
+                    vestibulum, orci metus placerat tellus, non aliquam.
+                </div>
+                <div class="owl-carousel owl-expertises owl-theme mt-md-5 mt-3">
+                    <div class="item" data-aos="fade-up">
+                        <div class="item-expertises">
+                            <figure>
+                                <img src="/assets/images/expertises_1.png" alt="" class="m-auto">
+                                <figcaption>
+                                    <h2>Soluções para
+                                        Investimentos</h2>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at tortor ultricies,
+                                    placerat est id, vestibulum.
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="item" data-aos="fade-down">
+                        <div class="item-expertises">
+                            <figure>
+                                <img src="/assets/images/expertises_2.png" alt="" class="m-auto">
+                                <figcaption>
+                                    <h2>ACONSELHAMENTO FINANCIERO</h2>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at tortor ultricies,
+                                    placerat est id, vestibulum.
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="item" data-aos="fade-up">
+                        <div class="item-expertises">
+                            <figure>
+                                <img src="/assets/images/expertises_3.png" alt="" class="m-auto">
+                                <figcaption>
+                                    <h2>Soluções para
+                                        Investimentos</h2>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at tortor ultricies,
+                                    placerat est id, vestibulum.
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="item" data-aos="fade-down">
+                        <div class="item-expertises">
+                            <figure>
+                                <img src="/assets/images/expertises_3.png" alt="" class="m-auto">
+                                <figcaption>
+                                    <h2>Soluções para
+                                        Investimentos</h2>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at tortor ultricies,
+                                    placerat est id, vestibulum.
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="item" data-aos="fade-up">
+                        <div class="item-expertises">
+                            <figure>
+                                <img src="/assets/images/expertises_3.png" alt="" class="m-auto">
+                                <figcaption>
+                                    <h2>Soluções para
+                                        Investimentos</h2>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at tortor ultricies,
+                                    placerat est id, vestibulum.
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="magnetic s_artigos py-xl-0 py-5" id="artigos">
+            <div class="wrapper wrapper-1240 text-center">
+                <h1 class="title_section branco">Artigos</h1>
+                <div class="desc_section branco mt-3 mb-md-0 mb-5">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis, neque at scelerisque
+                    vestibulum, orci metus placerat tellus, non aliquam.
+                </div>
+                <div class="row mt-md-4 pt-md-1 justify-content-center">
+                    <div class="col-lg-5 col-md-6 mb-md-0 mb-5" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                        <div class="item_artigos_home" style="background-image:url('/assets/images/artigo_1.PNG');">
+                            <div class="infos_artigos_home">
+                                <span>7 OUT 2019</span>
+                                <h2>Onde Investir Com a Queda
+                                    da Selic e Qual Impacto
+                                    na Renda Fixa</h2>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis, neque at
+                                scelerisque vestibulum, orci metus placerat tellus, non aliquam...
+                                <div class="link_artigos_home"><a href="#">LER ARTIGO</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6 mb-md-0 mb-5" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                        <div class="item_artigos_home" style="background-image:url('/assets/images/artigo_2.PNG');">
+                            <div class="infos_artigos_home">
+                                <span>14 OUT 2019</span>
+                                <h2>Resultado da AMBEV mostra oportunidade para investidores
+                                    de longo prazo</h2>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis, neque at
+                                scelerisque vestibulum, orci metus placerat tellus, non aliquam...
+                                <div class="link_artigos_home"><a href="#">LER ARTIGO</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-md-4 pt-3">
+                    <a href="#" class="btn btn-outline-warning">VER TODOS</a>
+                </div>
+            </div>
+        </section>
+    </main >
+    <footer class="footer pt-5 pb-4">
+        <div class="wrapper wrapper-1240 pt-md-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-2 mb-5">
+                    <figure class="mb-0">
+                        <img class="m-auto" src="/assets/images/logo-footer.png" alt="">
+                    </figure>
+                </div>
+                <div class="col-xl-8 col-lg-10 ml-xl-5">
+                    <div class="itens-footer mx-lg-4 mx-md-3">
+                        <h2>Contato</h2>
+                        <ul class="navbar-nav menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#sobre">A Numo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#expertises">Expertises</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#artigos">Artigos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Compliance</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Área do Cliente</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="itens-footer mx-lg-4 mx-md-3">
+                        <h2>Redes Sociais</h2>
+                        <a href="#">
+                            <i class="fab fa-linkedin mx-2 fs-22 branco pt-2"></i>
+                        </a>
+                    </div>
+                    <div class="itens-footer mx-lg-4 mx-md-3">
+                        <h2>Contato</h2>
+                        <ul>
+                            <li>(85) 3085-8886</li>
+                            <li>(85) 99868-3664</li>
+                            <li>numo@numogp.com.br</li>
+                        </ul>
+                    </div>
+                    <div class="itens-footer mx-lg-4 mx-md-3">
+                        <h2>Endereço</h2>
+                        <ul>
+                            <li>Av. Santos Dumont, nº 3060, Sala 721 </li>
+                            <li>Ed. Casablanca, Aldeota, Fortaleza/CE </li>
+                            <li>CEP: 60150-162</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="/assets/js/deps.min.js"></script>
+    <script type="text/javascript" src="/assets/js/app.min.js"></script>
+</body>
+
+</html>
