@@ -1,40 +1,48 @@
 
 <!-- Ínicio Section Footer -->
 <footer class="footer">
-    
 
     <div class="wrapper wrapper-1314">
 
-        <div class="d-md-flex align-items-center justify-content-between">
+        <div class="d-flex justify-content-between">
 
 
-            <div class="logos-footer">
-                <figure>
-                    <img class="responsive" src="<?php the_field('logo_-_rodape', 6);?>" alt="">
-                </figure>
+            <div class="row wrap">
+
+                <div class="col-sm-2 col-4 my-1">
+                    <i class="fab fa-youtube fs-22 bg-contato"></i>
+                </div>
+
+                <div class="col-sm-2 col-4 my-1">
+                    <i class="fab fa-instagram fs-22 bg-contato"></i>
+                </div>
+
+                <div class="col-sm-2 col-4 my-1">
+                    <i class="fab fa-facebook fs-22 bg-contato"></i>
+                </div>
+
+                <div class="col-sm-2 col-4 my-1">
+                    <i class="fab fa-twitter fs-22 bg-contato"></i>
+                </div>
+
+                <div class="col-sm-2 col-4 my-1">
+                    <i class="fab fa-github fs-22 bg-contato"></i>
+                </div>
+
+                <div class="col-sm-2 col-4 my-1">
+                    <i class="fab fa-linkedin fs-22 bg-contato"></i>
+                </div>
+
             </div>
 
-
-
-            <div class="my-3">
-                <a href="#" class="btn btn-azul-3 btn-381">GARANTIR MINHA VAGA</a>
+            <div>
+                <a href="#s-intro-home"><i class="fas fa-angle-up bg-btn-up"></i></a>
             </div>
-
-
-            <div class="infos-section d-block d-md-flex align-items-center">
-                <p>Redes Sociais:</p>
-                <ul class="redes-sociais">
-                    <li><a href="<?php the_field('instagram')?>" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="<?php the_field('facebook')?>" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                </ul>
-            </div>
-
-
 
         </div>
 
     </div>
-    
+
 </footer>
 <!-- Fim Section Footer-->
 

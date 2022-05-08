@@ -10,48 +10,31 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+}
+
+.btn-form-2{
+    background-color: $preto-3;
     transition: all .3s ease;
-    // text-transform: uppercase;
+    box-shadow: none;
+    outline: none;
+
     &:focus, &:active, &:hover{
-        box-shadow: none;
-        outline: none;
-        transform: scale(1.05);
+        color: $branco;
+        background-color: $preto-2;
     }
 }
 
-.btn-danger, .btn-danger:focus, .btn-danger:active, .btn-danger:hover{
-    // background: $verde;
-    background: #7a00d4;
-    background: linear-gradient(90deg, #7a00d4 0%, #ff4200 100%);
-    //border: 1px solid transparent;
+.btn-outline-roxo{
+    background-color: none;
     transition: all .3s ease;
     box-shadow: none;
     outline: none;
-}
+    border: 1px solid $roxo;
 
-.btn-azul-2 {
-     // background: $verde;
-    background-color: $azul-2;
-    //border: 1px solid transparent;
-    transition: all .3s ease;
-    box-shadow: none;
-    outline: none;
-}
-
-.btn-azul-3, .btn-success:focus, .btn-success:active, .btn-success:hover{
-    background: $roxo;
-    transition: all .3s ease;
-    box-shadow: none;
-    outline: none;
-    font-family: Ubuntu;
-}
-
-.btn-success, .btn-success:focus, .btn-success:active, .btn-success:hover{
-    background: $verde;
-    border: 1px solid $verde;
-    transition: all .3s ease;
-    box-shadow: none;
-    outline: none;
+    &:focus, &:active, &:hover{
+        color: $branco;
+        background-color: $roxo;
+    }
 }
 
 // Formulário

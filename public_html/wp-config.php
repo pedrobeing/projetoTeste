@@ -11,7 +11,7 @@ if(trim($senha)=='conexo2021'){
 	$_SESSION['siteblocked']="nomore";
 	ob_clean();
 	header("Location: ".$_SERVER['REQUEST_URI']);
-	exit();	
+	exit();
 }
 ?>
 <script>
@@ -73,8 +73,8 @@ define( 'DB_NAME', 'conexo' );
 // /** MySQL database username */
 define( 'DB_USER', 'root' );
 //define( 'DB_USER', 'inst_conexo' );
-// * MySQL database password 
-define( 'DB_PASSWORD', 'being' );
+// * MySQL database password
+define( 'DB_PASSWORD', 'Mopof@2020' );
 //define( 'DB_PASSWORD', '1c0n3x0XPF#' );
 
 // /** MySQL hostname */

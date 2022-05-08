@@ -48,7 +48,7 @@ if ( current_user_can('editor') ) {
 		remove_menu_page('tools.php');
 	}
 	add_action( 'admin_menu', 'my_remove_menu_pages' );
-		
+
 // Retira o Símbolo do Wordpress e dos comentários
 
 	function annointed_admin_bar_remove() {
@@ -58,27 +58,27 @@ if ( current_user_can('editor') ) {
 	}
 
 	add_action('wp_before_admin_bar_render', 'annointed_admin_bar_remove', 0);
-	
+
 }
 
 // Allow editors to see Appearance menu
 $role_object = get_role( 'editor' );
 $role_object->add_cap( 'edit_theme_options' );
 function hide_menu() {
- 
+
     // Hide theme selection page
     remove_submenu_page( 'themes.php', 'themes.php' );
 
     // Hide customize page
     remove_submenu_page( 'themes.php', 'customize.php' );
- 
+
     // Hide customize page
     global $submenu;
     unset($submenu['themes.php'][6]);
- 
+
 }
 
- 
+
 add_action('admin_head', 'hide_menu');
 
 
@@ -113,7 +113,7 @@ function excerpt($limit, $post = null) {
       $excerpt = implode(" ",$excerpt).'...';
     } else {
       $excerpt = implode(" ",$excerpt);
-    }	
+    }
     $excerpt = preg_replace('`[[^]]*]`','',$excerpt);
     return $excerpt;
 }
@@ -122,15 +122,15 @@ function excerpt($limit, $post = null) {
 add_filter('single_template', 'check_for_category_single_template');
 function check_for_category_single_template( $t )
 {
-  foreach( (array) get_the_category() as $cat ) 
-  { 
-    if ( file_exists(get_stylesheet_directory() . "/single-category-{$cat->slug}.php") ) return get_stylesheet_directory() . "/single-category-{$cat->slug}.php"; 
+  foreach( (array) get_the_category() as $cat )
+  {
+    if ( file_exists(get_stylesheet_directory() . "/single-category-{$cat->slug}.php") ) return get_stylesheet_directory() . "/single-category-{$cat->slug}.php";
     if($cat->parent)
     {
       $cat = get_the_category_by_ID( $cat->parent );
       if ( file_exists(get_stylesheet_directory() . "/single-category-{$cat->slug}.php") ) return get_stylesheet_directory() . "/single-category-{$cat->slug}.php";
     }
-  } 
+  }
   return $t;
 }
 
@@ -141,7 +141,7 @@ function check_for_category_single_template( $t )
 function my_pagination() {
 	global $wp_query;
 	$current_page = (get_query_var('paged')) ? get_query_var('paged') : 1;
-	
+
 	echo paginate_links( array(
 		'base' => str_replace( 9999999999999, '%#%', esc_url( get_pagenum_link( 9999999999999 ) ) ),
 		'format' => '?paged=%#%',
@@ -198,7 +198,7 @@ function register_banner() {
 
 		'query_var' => true,
 		'supports' => array('title', 'page-attributes','post-formats'),
-		
+
 		'labels' => array (
 			'name' => 'Banners',
 			'singular_name' => 'Banner',
@@ -215,15 +215,15 @@ function register_banner() {
 			'not_found_in_trash' => 'Nenhum Banner Encontrado no Lixo',
 			'parent' => 'Parent Banner',
 		)
-	)); 
+	));
 }
 
-// Método para o registro da Custom Taxonomy Tipo Banner 
+// Método para o registro da Custom Taxonomy Tipo Banner
 
 function custom_tax_banner(){
     $custom_tax_nome = 'categorias_banner';
 	$custom_post_type_nome = 'banner';
-	 
+
 	$labels = array(
 		'name' => 'Categorias',
 		'singular_name' => 'Categoria',
@@ -250,50 +250,47 @@ function custom_tax_banner(){
 add_action( 'init', 'custom_tax_banner' );
 
 
-// Custom Type Produtos
-/*add_action('init', 'register_produtos');
-function register_produtos() {
-
-	register_post_type('produto', array(
-		'label' => 'produto',
-		'description' => 'produto',
-		'public' => true,
-		'menu_icon'   => 'dashicons-archive',
-		'show_ui' => true,
-		'show_in_menu' => true,
-		'capability_type' => 'post',
-		'map_meta_cap' => true,
-		'hierarchical' => false,
-        'numberposts' => -1,
-		'rewrite' => array('slug' => 'produto', 'with_front' => true),
-
-		'query_var' => true,
-		'supports' => array('title', 'page-attributes','post-formats'),
-		
-		'labels' => array (
-			'name' => 'Produtos',
-			'singular_name' => 'Produtos',
-			'menu_name' => 'Produtos',
-			'add_new' => 'Adicionar Novo',
-			'add_new_item' => 'Adicionar Novo Produto',
-			'edit' => 'Editar',
-			'edit_item' => 'Editar Produtos',
-			'new_item' => 'Novo Produto',
-			'view' => 'Ver Produtos',
-			'view_item' => 'Ver Produtos',
-			'search_items' => 'Procurar Produtos',
-			'not_found' => 'Nenhum Produto Encontrado',
-			'not_found_in_trash' => 'Nenhum Produtos Encontrado no Lixo',
-			'parent' => 'Parent Produtos',
-		)
-	)); 
-}*/
+add_action('init', 'register_empresas');
+	function register_empresas() {
+		register_post_type('empresas', array(
+			'label' => 'Empresas',
+			'description' => 'Empresas',
+			'public' => true,
+			'menu_icon'   => 'dashicons-networking',
+			'show_ui' => true,
+			'show_in_menu' => true,
+			'capability_type' => 'post',
+			'map_meta_cap' => true,
+			'hierarchical' => false,
+			'numberposts' => -1,
+			'show_in_rest' => true,
+			'rewrite' => array('slug' => 'empresas', 'with_front' => true),
+			'query_var' => true,
+			'supports' => array('title', 'page-attributes','post-formats'),
+			'labels' => array (
+				'name' => 'Empresas',
+				'singular_name' => 'Empresa',
+				'menu_name' => 'Empresas',
+				'add_new' => 'Adicionar Novo',
+				'add_new_item' => 'Adicionar Nova Empresa',
+				'edit' => 'Editar',
+				'edit_item' => 'Editar Empresa',
+				'new_item' => 'Nova Empresa',
+				'view' => 'Ver Empresa',
+				'view_item' => 'Ver Empresa',
+				'search_items' => 'Procurar Empresas',
+				'not_found' => 'Nenhuma Empresa Encontrada',
+				'not_found_in_trash' => 'Nenhuma Empresa Encontrado no Lixo',
+				'parent' => 'Parent Empresa',
+			)
+		));
+	}
 
 
 function my_meta_box_cb () {
 	add_meta_box( MY_POST_TYPE . '_details' , 'Galeria', 'my_meta_box_details', MY_POST_TYPE, 'normal', 'high' );
 }
-	
+
 function my_meta_box_details () {
 	global $post;
 	$post_ID = $post->ID; // global used by get_upload_iframe_src

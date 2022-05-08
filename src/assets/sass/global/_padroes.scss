@@ -1,14 +1,13 @@
-
 // Global
 body {
 	background-color: #121212;
 	background: #121212;
-	// color: #636363;
-	font-family: 'Ubuntu', sans-serif;;
+	font-family: 'Raleway', sans-serif;
 	font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
+
 a:hover {
 	text-decoration: none;
 }
@@ -17,17 +16,16 @@ img {
 	display: block;
 }
 
-img.responsive {max-width: 100%;}
-
-*, ::after, ::before {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+html{
+    scroll-behavior: smooth;
 }
 
-// .owl-carousel .owl-item img{
-// 	width: auto;
-//     max-width: 100%;
-// }
+img.responsive {max-width: 100%;}
+
+hr{
+    overflow: hidden;
+    display: block
+}
 
 //Placeholder
 @mixin input-placeholder {
@@ -38,81 +36,89 @@ img.responsive {max-width: 100%;}
 	&::-webkit-input-placeholder { @content; }
 }
 
-// Medias
-$largura-celular-smaller: 374px;
-$largura-celular-small: 424px;
-$largura-celular: 575px;
-$largura-celular-paisagem: 767px;
-$largura-tablet: 991px;
-$largura-desktop: 1199px;
-$largura-notebook: 1460px;
-
 // Container
-.wrapper{ 
+.wrapper{
 	width:100%;
 	margin:0px auto;
 	z-index:9;
 	position: relative;
 	padding: 0px 15px;
 }
-.wrapper-1314{ 
-	max-width: 1314px; 
+
+.wrapper-1314{
+	max-width: 1314px;
+}
+
+.max-200{
+    max-width: 200px;
+}
+
+.max-350{
+    max-width: 350px;
 }
 
 .max-400{
 	max-width: 400px;
 }
 
+.max-500{
+    max-width: 500px;
+}
+
+.max-520{
+    max-width: 520px;
+}
+
+.max-550{
+    max-width: 550px;
+}
+
+.max-600{
+    max-width: 600px;
+}
+
+// Separador
+
+.separador-numeros{
+    border-top: 2px solid rgba(115, 50, 189, 0.678);
+    margin-top: 0px;
+    max-width: 200px;
+    width: 100%;
+}
+
+.separador-section{
+    margin: 0;
+    width: 100%;
+    border-top: 1px solid #393939;
+}
 
 // Cores
-$branco: #fff;
-$preto: #000;
-$azul: #272B5D;
-$azul-1: #003DA5;
-$azul-2: #223DA5;
-$azul-3: #3BAAFF;
-$azul-4: #6DB8F2;
-$verde: #00CA85;
-$cinza: #636363;
+$verde: #04d361;
+$vermelho: #e43b3b;
+$cinza: #a8a8b3;
 $cinza-1: #D1D1D1;
-$vermelho: #DE2110;
-
-.azul{color: $azul;}
-.cinza{color: $cinza;}
-.branco{color: $branco;}
-
-$branco: #fff;
+$branco: #E1E1E6;
 $preto: #000;
 $preto-2: #171717;
 $preto-3: #212121;
+$roxo: #8257e6;
+$roxo-2: #6816ece8;
 
-$roxo: #630af3;
-$roxo-2: #7b30f5e8;
-$laranja: #e75231;
-$laranja-2: #f17a5f;
-$rosa: #e21f80;
-
-
+.cinza{color: $cinza;}
+.branco{color: $branco;}
+.verde{color: $verde;}
 .roxo{color: $roxo;}
 .roxo-2{color: $roxo-2;}
-.laranja{color: $laranja;}
-.laranja-2{color: $laranja-2;}
-.rosa{color: $rosa;}
 
 
 // Fontes
-.fs-12 {font-size: 12px;}
-.fs-16 {font-size: 16px;}
 .fs-22 {font-size: 22px;}
-.fs-32 {font-size: 32px;}
-
-
 
 // Tamanhos botões
 
-.btn-381{
+.btn-218{
 	width: 100%;
-	max-width: 381px;
+	max-width: 218px;
 	height: 56px;
 }
 
@@ -125,38 +131,36 @@ $rosa: #e21f80;
 
 //padrôes dos textos
 .infos-section{
-	font-size: 18px;
-	font-family: 'Ubuntu', sans-serif;;
+	font-size: 16px;
+	font-family: 'Raleway', sans-serif;
 	font-weight: normal;
     font-style: normal;
     font-display: swap;
 	strong{
-		font-family: 'Gotham-Bold';
+		font-family: 'Raleway', sans-serif;
 		font-weight: bold;
 	}
 	h1{
-		font-size: 36px;
-		// color: $preto;
-		font-family: 'Ubuntu', sans-serif;;
+		font-size: 48px;
+		font-family: 'Raleway', sans-serif;
 		font-weight: normal;
 		font-style: normal;
-	
+
 		strong{
-			font-family: 'Gotham-Bold';
+			font-family: 'Raleway', sans-serif;
 			font-weight: bold;
 		}
 	}
 	h2{
 		font-size: 31px;
-		color: $preto;
-		font-family: 'Gotham-Bold';
+		font-family: 'Raleway', sans-serif;
 		font-weight: bold;
 		font-style: normal;
-		
+
 	}
 	h3{
 		font-size: 25px;
-		font-family: 'Gotham-Bold';
+		font-family: 'Raleway', sans-serif;
 		font-weight: bold;
 		font-style: normal;
 
@@ -166,74 +170,58 @@ $rosa: #e21f80;
 	}
 }
 
-// Padding pages
-
-.s_page_geral {
-    padding: 100px 0px 200px;
-	overflow: hidden;
-}
-
-.page-404{
-	padding: 200px 0px;
-	h2{
-		color: $azul;
-	}
+.roboto{
+    font-family: 'Roboto', sans-serif;
 }
 
 
-// MEDIA
 
-// Padding pages
+// Medias
+
 @media(max-width: 1440px){
-	
+
 }
 @media(max-width: 1199px){
-	// Padding pages
-	.s_page_geral {
-		padding: 80px 0px 150px;
-	}
-	.page-404{
-		padding: 150px 0px;
-	}
+
 	//padrôes dos textos
 	.infos-section{
 		font-size: 18px;
 		h1{
-			font-size: 26px;
+			font-size: 34px;
 		}
 		h2{
 			font-size: 26px;
 		}
 	}
-	.btn-355{
-		max-width: 330px;
-	}
 }
 @media(max-width: 991px){
-	// Padding pages
-	.s_page_geral {
-		padding: 50px 0px 100px;
-	}
-	.page-404{
-		padding: 150px 0px 100px;
-	}
 
 	//padrôes dos textos
 	.infos-section{
 		font-size: 14px;
 		h1{
-			font-size: 23px;
+			font-size: 32px;
 		}
 		h2{
 			font-size: 23px;
 		}
 	}
-	.btn-355{
-		max-width: 300px;
-		font-size: 14px;
-	}
-	.btn-335{
-		max-width: 190px;
-		font-size: 14px;
-	}
+}
+
+@media(max-width: 767){
+
+    .infos-section{
+        h1{
+            font-size: 28;
+        }
+    }
+}
+
+@media(max-width: 540){
+
+    .infos-section{
+        h1{
+            font-size: 24;
+        }
+    }
 }

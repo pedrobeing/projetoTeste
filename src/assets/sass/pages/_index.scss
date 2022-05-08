@@ -1,14 +1,26 @@
-// Página 404
-.page-404{
-    padding: 250px 0px 100px;
-    border-top: 2px solid $vermelho;
-    border-bottom: 2px solid $vermelho;
+.img-background {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 643px;
+    width: 100%;
+    min-height: 418px;
 }
 
+.img-background-2 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 643px;
+    width: 100%;
+    min-height: 560px;
+}
+
+
 // Sessão Introdução
-.s-intro-home {
-    padding: 0px 80px;
-    // background-image: url('/src/assets/images/banner-conexo.png');
+
+.s_intro_home {
+    padding: 50px 80px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -19,8 +31,17 @@
 
 // Formulário
 
+.img_inscreva {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 643px;
+    width: 100%;
+    min-height: 418px;
+}
+
 .s_formulario{
-    padding: 60px 80px;
+    padding: 60px 80px 160px;
 
     .infos-section{
         h1{
@@ -28,7 +49,6 @@
         }
     }
 }
-
 
 .box-form{
     background: $preto-2;
@@ -45,7 +65,7 @@
 
         .titulo_form {
             color: $branco;
-            font-family: 'Ubuntu', sans-serif;
+            font-family: 'Raleway', sans-serif;
             font-size: 32px;
             font-weight: bold;
             text-align: left;
@@ -59,28 +79,28 @@
     label{
         color: $branco;
         font-size: 14px;
-        font-family: 'Ubuntu', sans-serif;
-        
+        font-family: 'Raleway', sans-serif;
+
         h3{
         color: $branco;
-        font-family: 'Ubuntu', sans-serif;
-        }   
+        font-family: 'Raleway', sans-serif;
+        }
     }
 
         a {
-            font-family: 'Ubuntu', sans-serif;
+            font-family: 'Raleway', sans-serif;
             border-bottom: 1px solid $branco;
 
             strong {
                 color: $branco;
-                font-family: 'Ubuntu', sans-serif;
+                font-family: 'Raleway', sans-serif;
             }
         }
-    
+
 
     .form-control {
         background-color: #121212;
-        font-family: 'Ubuntu', sans-serif;
+        font-family: 'Raleway', sans-serif;
         min-height: 56px;
         border-radius: 8px;
     }
@@ -91,7 +111,7 @@
     }
     .btn{
         margin-top: 30px;
-        font-family: 'Ubuntu', sans-serif;
+        font-family: 'Raleway', sans-serif;
         background-color: $preto-3;
     }
     .wpcf7 .ajax-loader{
@@ -107,52 +127,103 @@
 // Sessão Quem Somos
 .s-quem-somos {
 
-    padding: 150px 100px;
+    background-color: #151515;
+    padding: 100px 0px;
 
-    .img-quem-somos {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        max-width: 643px;
-        width: 100%;
-        min-height: 418px;
-    }
-
-    article {
+    .box-quem-somos {
         max-width: 745px;
         width: 100%;
         min-height: 226px;
         background-color: $roxo;
         border-radius: 8px;
         padding: 37px 80px 37px 35px;
-        margin-left: -100px;
         box-shadow: 10px 10px 1px 0px $roxo-2;
 
-        h1 {
-            font-size: 40px;
-            font-family: 'Ubuntu', sans-serif;
-            font-weight: bold;
-            color: $branco;
-        }
-
-        p {
-            font-size: 20px;
-            font-family: 'Ubuntu', sans-serif;
-            color: $branco;
-        }
-    } 
+    }
 }
 
-//Footer 
+// Sessão Por que a Rocket
+
+.s_porque_rocket{
+    padding: 80px 0px;
+}
+
+// Sessão Números
+
+.s_numeros{
+    padding: 80px 0px;
+
+    background-color: #151515;
+
+    span{
+        font-size: 56px;
+    }
+
+    @media(max-width: 1440px){
+
+        span{
+            font-size: 46px;
+        }
+    }
+
+    @media(max-width: 1199px){
+
+        span{
+            font-size: 42px;
+        }
+    }
+
+    @media(max-width: 991px){
+
+        span{
+            font-size: 38px;
+        }
+    }
+
+    @media(max-width: 540px) {
+        hr{
+            display: none;
+        }
+    }
+
+}
+
+// Sessão Feedback
+
+.s_feedback{
+    padding: 80px 0px;
+
+    .img-cliente{
+        border: 2px solid $cinza;
+        border-radius: 50%;
+    }
+}
+
+
+// Sessão Empresas
+
+.s_empresas{
+    padding: 80px 0px;
+    background-color: #151515;
+}
+
+// Sessão Comece Agora
+
+.s_comece{
+    padding: 80px 0px;
+
+}
+
+//Footer
 
 footer {
-    background-color: $preto-3;
+    background-color: #181818;
 
     .infos-section {
 
         p {
             margin: 0px;
-            font-family: 'Ubuntu', sans-serif;
+            font-family: 'Raleway', sans-serif;
             color: $branco;
             font-size: 16px;
         }
@@ -161,7 +232,7 @@ footer {
             margin: 0px;
 
             li {
-                a { 
+                a {
                     i {
                         color: $roxo;
                         font-size: 22px;
@@ -199,7 +270,7 @@ footer {
     border: 1px solid red
 }
 .wpcf7-not-valid-tip{
-    margin-top: -12px; 
+    margin-top: -12px;
     margin-bottom: 15px;
 }
 
@@ -211,18 +282,6 @@ footer {
     color: $vermelho;
 }
 
-// .formOutput{
-//     display: none;
-// }
-
-// .wpcf7 form.sent .wpcf7-response-output{
-//     border: none !important;
-//     margin: 2em 0em 1em !important;
-//     padding: 0px !important;
-//     font-size: 20px !important;
-//     text-align: center !important;
-// }
-
 .wpcf7 form.sent .wpcf7-response-output {
     border: 1px solid green !important;
     margin: 2em 0em 1em !important;
@@ -233,175 +292,34 @@ footer {
 }
 
 
-// Tela de Notebook
-@media(max-width: 1199px){
+// Medias
 
-    // Sessão Introdução
-    .s-intro-home {
-        .infos-section {
-            h1 {
-                span {
-                    font-size: 30px;
-                }
-            }
+@media(max-width: 1440px){
 
-            p {
-                font-size: 16px;
-            }
-        }
-    }
-
-    // Formulário
-    .box-form{
-        width: 100%;
-        max-width: 600px;
-        margin-left: auto;
-        padding: 35px;
-        margin-bottom: -85px;
-        .infos-section{
-
-            .titulo_form {
-                font-size: 25px;
-            }
-        }
-
-        .form-control {
-            min-height: 45px;
-        }
-
-        .btn{
-            margin-top: 25px;
-        }
-    }
-
-    // Sessão Quem Somos
-    .s-quem-somos {
-
-        padding: 80px 0px;
-    }
 }
 
+@media(max-width: 1199px){
+}
 
-// Tela de Tablet
 @media(max-width: 991px){
 
-    // Sessão Introdução
-    .s-intro-home {
-        .infos-section {
-            padding-top: 115px;
-
-            h1 {
-                span {
-                    font-size: 32px;
-                }
-            }
-
-            p {
-                font-size: 17px;
-            }
-        }
+    .s_intro_home, .img_inscreva, .img-background, .img-background-2{
+        min-height: 290px;
     }
 
-    // Formulário
-    .box-form{
-        width: 100%;
-        max-width: 550px;
-        padding: 35px;
-        margin: 0px auto;
-        .infos-section{
-
-            .titulo_form {
-                font-size: 25px;
-            }
-        }
-        
-        .form-control {
-            min-height: 50px;
-        }
-
-        .btn{
-            margin-top: 15px;
-            height: 50px;
-        }
-    }
-
-        //Quem somos
-        .s-quem-somos {
-
-            padding: 40px 0px;
-
-            .img-quem-somos {
-                max-width: 600px;
-                min-height: 400px;
-            }
-
-            .img-quem-somos {
-                margin: 4px auto;
-            }
-
-        article {
-            margin-top: 20px;
-            padding: 30px 60px 30px 30px;
-            margin: 4px auto;
-
-            h1 {
-                font-size: 30px;
-            }
-
-            p {
-                font-size: 18px;
-            }
-        } 
-    }
 }
 
-// Tela de Celular
 @media(max-width: 767px){
-
-    // Sessão Introdução
-    .s-intro-home {
-         padding: 20px 15px;
-         text-align: center;
-
-         .logo {
-            margin: 0 auto;
-        }
-
-        .infos-section {
-            h1 {
-                span {
-                    font-size: 28px;
-                }
-            }
-
-            p {
-                font-size: 16px;
-            }
-        }
+    .s_intro_home, .img_inscreva, .img-background, .img-background-2{
+        min-height: 250px;
     }
 
-    //Footer 
-
-    footer {
-        padding: 20px 0px 0px;
-
-        .logos-footer {
-            .responsive {
-                max-width: 180px;
-                margin-left: -45px;
-            }
-        }
-        .redes-sociais {
-            margin: 0px;
-
-            li {
-                a { 
-                    i {
-                        color: $azul-4;
-                        font-size: 22px;
-                    }
-                }
-            }
-        }
-    }  
 }
+
+@media(max-width: 540px){
+
+    .s_intro_home, .img_inscreva, .img-background, .img-background-2{
+        min-height: 150px;
+    }
+}
+
